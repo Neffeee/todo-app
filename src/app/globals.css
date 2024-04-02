@@ -17,17 +17,37 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #EFBC9B;
+
+}
+.textColor{
+  color:#FDFFF6;
+}
+.fontColor{
+  color: #9CAFAA;
+}
+.btnColor{
+  background-color: #FBF3D5;
+}
+.completed-task {
+  text-decoration: line-through;
+  width: 256px;
+  
+}
+
+.incomplete-task {
+  width: 256px;
+  text-decoration: none; /* You can optionally specify other styles for incomplete tasks */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+  
+  .btnStyling{
+    @apply py-2 px-4 tracking-wider fontColor btnColor font-bold rounded-md
+  }
 }
+
+/* w-64 truncate */
